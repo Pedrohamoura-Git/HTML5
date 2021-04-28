@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 19</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Aula 19 - Mais sobre tabelas</h2>
+
+	<p>
+		Nesta aula, aprendi que o modificador <em>width</em> também é aplicável à tag < table >, possibitando definir o tamanho fixo desejado para a tabela.
+	</p><br>
+
+	<table border="1" width="350">
+		<tr>
+			<td>Produto</td>
+			<td>Quantidade</td>
+			<td>Preço</td>
+		</tr>
+		<tr>
+			<td>Smartphone #81</td>
+			<td>01</td>
+			<td>R$1099,99</td>
+		</tr>
+		<tr>
+			<td>Mesa #352</td>
+			<td>01</td>
+			<td>R$736,24</td>
+		</tr>
+	</table><br>
+
+	<p>
+		 Caso <em>width</em> seja acompanhado do símbolo "%", é possível manter a proporção da tabela independentemente do tamanho da página. Esta lógica também se aplica a imagens.
+	</p><br>
+
+		<table border="1" width="50%">
+		<tr>
+			<td>Produto</td>
+			<td>Quantidade</td>
+			<td>Preço</td>
+		</tr>
+		<tr>
+			<td>Smartphone #81</td>
+			<td>01</td>
+			<td>R$1099,99</td>
+		</tr>
+		<tr>
+			<td>Mesa #352</td>
+			<td>01</td>
+			<td>R$736,24</td>
+		</tr>
+	</table><br>
+
+	<p>
+		Também é possível adicionar imagens na tabela e links dentro da tabela.
+	</p><br>
+
+	<table border="1" width="60%">
+		<tr>
+			<td>Produto</td>
+			<td>Imagem</td>
+			<td>Link</td>
+			<td>Quantidade</td>
+			<td>Preço</td>
+		</tr>
+		<tr>
+			<td>Smartphone #81</td>
+			<td>
+				<img src="../imagens/Smartphone.jpg" width="100%">
+			</td>
+			<td>
+				<a href="Aula 19.html">
+				Acessar Produto</a>
+			</td>
+			<td>01</td>
+			<td>R$1099,99</td>
+			<
+		</tr>
+		<tr>
+			<td>Mesa #352</td>
+			<td>
+				<img src="../imagens/mesa.jpg" width="100%">
+			</td>
+			<td>
+				<a href="Aula 19.html">
+				Acessar Produto</a>
+			</td>
+			<td>01</td>
+			<td>R$736,24</td>
+		</tr>
+	</table><br>
+
+	<p>
+		Outro modificador útil que pode ser aplicado junto ao < td >, é o colspan (<em>Colum Span</em> ou <em>Extensão da Coluna</em>). Ele permite definir quantas colunas serão preenchidas pelo dado informado. 
+	</p>
+
+	<table border="1" width="100">
+		<tr>
+			<td>Produto</td>
+			<td>Imagem</td>
+			<td>Link</td>
+			<td>Quantidade</td>
+			<td>Preço</td>
+			<td>Desconto</td>
+			<td>Preço Final</td>
+		</tr>
+	
+		<tr>
+			<td>Smartphone #81</td>
+			<td>
+				<img src="../imagens/Smartphone.jpg" width="100%">
+			</td>
+			<td>
+				<a href="Aula 19.html">
+				Acessar Produto</a>
+			</td>
+			<td>01</td>
+			<td>R$1099,99</td>
+			<td>R$0,00</td>
+			<td>R$1099,99</td>
+		</tr>
+
+		<!-- O número que acompanha colspan define o número de colunas a serem mescladas -->
+		<tr>
+			<td>Mesa #352</td>
+			<td>
+				<img src="../imagens/mesa.jpg" width="100%">
+			</td>
+			<td>
+				<a href="Aula 19.html">
+				Acessar Produto</a>
+			</td>
+			<td>01</td>
+			<td colspan="3">R$736,24</td>
+		</tr>
+	
+	</table><br>
+
+	<p>
+		Seguindo a mesma linha de raciocínio, é possível aplicar o modificador <em>rowspan</em> para mesclar n linhas, conforme representado em <em>Link</em> e em <em>Quantidade</em>
+	</p>
+
+	<table border="1" width="100">
+		<tr>
+			<td>Produto</td>
+			<td>Imagem</td>
+			<td>Link</td>
+			<td>Quantidade</td>
+			<td>Preço</td>
+			<td>Desconto</td>
+			<td>Preço Final</td>
+		</tr>
+	
+		<tr>
+			<td>Smartphone #81</td>
+			<td>
+				<img src="../imagens/Smartphone.jpg" width="100%">
+			</td>
+			<td rowspan="2">
+				<a href="Aula 19.html">
+				Acessar Produto</a>
+			</td>
+			<td rowspan="2">01</td>
+			<td>R$1099,99</td>
+			<td>R$0,00</td>
+			<td>R$1099,99</td>
+		</tr>
+
+		<!-- O número que acompanha rowspan define o número de linhas a serem mescladas -->
+		<tr>
+			<td>Mesa #352</td>
+			<td>
+				<img src="../imagens/mesa.jpg" width="100%">
+			</td>
+			<td>R$736,24</td>
+			<td>R$0,00</td>
+			<td>R$736,24</td>
+		</tr>
+	
+	</table><br>
+</body>
+</html>
