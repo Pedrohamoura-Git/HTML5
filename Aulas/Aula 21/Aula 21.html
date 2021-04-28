@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 21</title>
+</head>
+<body>
+	<h3>Aula 21 - Mais componentes de formulários</h3>
+
+	<h3>Cadastre-se</h3>
+	<form>
+		Nome Completo<br>
+		<input type="text" name="nome completo"><br><br>
+
+		Login<br>
+		<input type="text" name="Login"><br><br>
+		<hr>
+
+		<p>
+			Quando o modificador <em>type</em> recebe "radio", ele atua como opção de multipla escolha. Conforme apresentado abaixo.
+		</p>
+		
+		Sexo<br>
+		<input type="radio" name="Sexo" value="M"> Masculino<br>
+		<input type="radio" name="Sexo" value="F"> Feminino<br>
+		<input type="radio" name="Sexo" value="O"> Outro<br><br>
+
+		<hr>
+		<p>
+			Quando o modificador <em>type</em> recebe "checkbox", ele permite ao usuário escolher uma ou mais opções dentro da lista descrita. Conforme apresentado abaixo. 
+		</p>
+		Interesses<br>
+		<input type="checkbox" name="interesses"> Futebol<br>
+		<input type="checkbox" name="interesses"> Cursos<br>
+		<input type="checkbox" name="interesses"> Moda<br><br>
+
+		<hr>
+		<p>
+			A tag < select > permite ao usuário selecionar uma opção dentre o menu disponibilizado. O elemento < option > é usado para definir as opções dentro do menu.<br>
+			Confome apresentado abaixo.<br>
+		</p>
+		Estado<br>
+		<select name="estado">
+			<option value="ba">BA</option>
+			<option value="ce">CE</option>
+			<option value="sp">SP</option>
+			<option value="rj">RJ</option>
+		</select><br><br>
+
+		<hr>
+		<p>
+			A tag < textarea > cria uma área onde o usuário pode escrever livremente. 
+		</p>
+
+		Observações<br>
+		<textarea></textarea><br><br>
+
+		<hr>
+		<input type="submit" value="Cadastrar">
+	</form>
+</body>
+</html>
